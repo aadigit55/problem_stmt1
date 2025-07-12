@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Emergency Alert Dashboard</title>
+</head>
+<body>
+
+    <!-- Banner -->
+    <header>
+        <h1>City of Springfield - Emergency Alert Dashboard</h1>
+        <p>Current Emergency Alert Level:</p>
+        <meter min="0" max="10" value="8">High Alert</meter>
+    </header>
+
+    <!-- Main Section for Alerts -->
+    <main>
+        <section>
+            <article>
+                <h2>Flood Warning</h2>
+                <time datetime="2025-07-12T08:30">July 12, 2025 – 8:30 AM</time>
+                <p>Heavy rainfall is expected to cause flooding in low-lying areas of the city.</p>
+                <p><strong>Category:</strong> Flood</p>
+                <h3>What To Do:</h3>
+                <ul>
+                    <li>Avoid low-lying areas</li>
+                    <li>Do not attempt to drive through flooded streets</li>
+                    <li>Move to higher ground if needed</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Wildfire Near North Hills</h2>
+                <time datetime="2025-07-11T17:00">July 11, 2025 – 5:00 PM</time>
+                <p>Active wildfire reported near North Hills. Emergency services are responding.</p>
+                <p><strong>Category:</strong> Fire</p>
+                <h3>What To Do:</h3>
+                <ul>
+                    <li>Stay clear of affected areas</li>
+                    <li>Keep windows and doors closed</li>
+                    <li>Prepare for possible evacuation</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Air Quality Alert</h2>
+                <time datetime="2025-07-11T09:00">July 11, 2025 – 9:00 AM</time>
+                <p>Air quality index is at hazardous levels due to smoke from nearby fires.</p>
+                <p><strong>Category:</strong> Air Quality</p>
+                <h3>What To Do:</h3>
+                <ul>
+                    <li>Stay indoors and keep air clean</li>
+                    <li>Limit physical activity</li>
+                    <li>Wear a mask if going outside</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+        <section>
+            <h2>City Contact Information</h2>
+            <p><strong>Emergency Services:</strong> 911</p>
+            <p><strong>Non-Emergency Line:</strong> (555) 123-4567</p>
+            <p><strong>Emergency Shelters:</strong> Community Center, Lincoln High School</p>
+        </section>
+
+        <section>
+            <h2>Report a Local Issue</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="issue">Describe the issue:</label><br>
+                <textarea id="issue" name="issue" rows="4" cols="30"></textarea><br><br>
+
+                <label>
+                    <input type="checkbox" name="followup" value="yes">
+                    Request a follow-up call
+                </label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <img src="city-logo.png" alt="City Logo" width="100">
+        </p>
+        <p>Current Date: July 12, 2025</p>
+        <p><a href="emergency-bulletin.pdf" download>Download Printable Alert Bulletin (PDF)</a></p>
+    </footer>
+
+</body>
+</html>
